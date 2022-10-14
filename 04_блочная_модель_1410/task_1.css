@@ -1,0 +1,8 @@
+li {
+    color: green;
+}
+
+li:hover {
+    color: red;
+    text-decoration: line-through;
+}
