@@ -1,0 +1,55 @@
+/* task 1.1 */
+#test > a:visited  {
+    text-decoration: none;
+    color: red;
+}
+
+#test > a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+/* task 1.4 */
+.eee+.www:hover {
+    color: violet;
+}
+
+/* task 3.1 */
+.square {
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+}
+
+/* task 3.2 */
+.blue-rect {
+    width: 200px;
+    padding: 50px;
+    border: 2px dotted blue;
+}
+
+/* task 3.3 */
+.green-rect {
+    width: 100px;
+    height: 100px;
+    border: 2px dashed green;
+}
+
+/* task 3.4 */
+.rainbow-rect {
+    width: 200px;
+    padding: 50px;
+    border-top: 2px solid blue;
+    border-right: 2px solid green;
+    border-bottom: 2px solid red;
+    border-left: 2px solid black;
+    border-radius: 25px;
+}
+
+/* task3.7 */
+.circle {
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+    border-radius: 80px;
+}
