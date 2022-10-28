@@ -1,0 +1,45 @@
+.frame {
+    display: inline-block;
+    margin: 10px;
+    background: #27ae60;
+    border-radius: 6px;
+}
+
+.frame img {
+    position: relative;
+    top: -5px;
+    left: -5px;
+    display: block;
+    border-radius: 5px;
+    background: white;
+}
+
+.block {
+    padding: 10px;
+    color: white;
+    text-align: right;
+    opacity: 0.6;  /* непрозрачность 80% */
+}
+
+.block-1 {
+    position: absolute;
+    z-index: 200;
+    width: 350px;
+    height: 350px;
+    background: #3a78a1;
+}
+.block-2 {
+    position: absolute;
+    z-index: 100;  /* чем больше z-index, тем выше блок относительно других */
+    width: 250px;
+    height: 250px;
+    background: #e74c3c;
+}
+.block-3 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: #27ae60;
+}
+
+

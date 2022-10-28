@@ -1,0 +1,26 @@
+.outline {
+    margin: 5px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px dotted #5d5d5d;
+}
+
+.column {
+    display: inline-block;
+}
+
+.block-relative {
+    position: relative;
+    top: 5px;  /* сдвигаю блок относительно его позиции
+     сверху на 10 пикселей */
+    left: 5px;  /* сдвигаю блок относительно его позиции слева на 20 пикселей  */
+    /* зададим блоку относительное позиционирование */
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    background: #3b8dd2;
+}
+
+.block-shadow {
+    background: red;
+}

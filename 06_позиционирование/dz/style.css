@@ -1,0 +1,65 @@
+html {
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background: blue;
+}
+
+.scene {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    background: none;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+div {
+    display: inline-block;
+    background-color: white;
+}
+
+
+/* горизонтальные элементы */
+.h {
+    width: 50px;
+    height: 10px;
+}
+
+.h3 {
+    width: 40px;
+}
+
+/* вертикальные элементы */
+.v {
+    width: 10px;
+    height: 50px;
+}
+
+/* уголки */
+.corner-top {
+    background: none;
+    border: 15px solid white;
+    border-top-width: 20px;
+    border-top-color: transparent;
+    border-bottom-width: 0;
+}
+
+.corner-bottom {
+    background: none;
+    border: 15px solid transparent;
+    border-top-width: 20px;
+    border-top-color: white;
+    border-bottom-width: 0;
+}
+
+/* лого */
+.logo {
+    width: 64px;
+    height: 64px;
+    background-image: url("https://htmlacademy.ru/assets/logo.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
