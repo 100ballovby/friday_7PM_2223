@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<h1>Другие типы инпутов</h1>
+<p>Какой тег обозначает <i>абзац</i>?</p>
+<form action="https://echo.htmlacademy.ru/courses" class="form">
+    <div class="form-group">
+        <!-- radio - это поле одиночного выбора (кругленькое) -->
+        <input type="radio" value="p" name="q1" id="q1">
+        <label for="q1">тег p</label>
+        <br>
+        <input type="radio" value="b" name="q1" id="q2">
+        <label for="q2">тег b</label>
+    </div>
+    <div class="form-group">
+        <label for="color-choice">Choose a color</label>
+        <select name="color" id="color-choice">
+            <option value="black">Black</option>
+            <option value="white">White</option>
+            <option value="red">Red</option>
+        </select>
+        <!--
+        select - это поле выбора из нескольких вариантов,
+        в виде выпадающего списка
+        option - это элемент выпадающего списка
+        value - значение, которое будет передано при отправке формы
+        -->
+    </div>
+
+    <div class="form-group">
+        <label for="days">Дни недели:</label>
+        <select name="days" id="days" multiple> <!-- multiple - позволяет выбрать сразу несколько элементов в списке -->
+            <option value="mon">Monday</option>
+            <option value="tue">Tuesday</option>
+            <option value="wed">Wednesday</option>
+            <option value="thu">Thursday</option>
+            <option value="fri">Friday</option>
+            <option value="sat">Saturday</option>
+            <option value="sun">Sunday</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="date">Выберите дату</label>
+        <input type="date" id="date"> <!-- тип поля с календарем (дата) -->
+    </div>
+    <div class="form-group">
+        <label for="time">Выберите время</label>
+        <input type="time" id="time"> <!-- тип поля для выбора времени -->
+    </div>
+
+    <div class="form-group">
+        <label for="count">Выберите количество:</label>
+        <input type="number" min="1" max="10" step="0.5" id="count">
+        <!-- Выбор чисел
+         min - нижняя граница
+         max - верхняя граница
+         step - шаг (насколько будут увеличиваться числа в поле ввода)
+         -->
+    </div>
+    <input type="submit" value="Send"> <!-- кнопка отправки формы -->
+    <input type="reset" value="Reset"> <!-- кнопка сброса всех введенных полей  -->
+</form>
+
+</body>
+</html>
