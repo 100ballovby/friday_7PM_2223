@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблицы</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<table class="table">
+    <thead> <!-- заголовок таблицы -->
+        <tr>  <!-- строчка с заголовками -->
+            <th>Браузер</th> <!-- ячейка-заголовок 1 -->
+            <th>Посетители</th> <!-- ячейка-заголовок 2 -->
+            <th>Время</th> <!-- ячейка-заголовок 3 -->
+            <th>Процент посещений</th> <!-- ячейка-заголовок 4 -->
+        </tr>
+    </thead>
+    <tbody> <!-- тело таблицы -->
+        <tr>
+            <td rowspan="2">Chrome</td> <!-- первый столбец -->
+            <td>1283</td>
+            <td>2:50</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>895</td>
+            <td>1:12</td>
+            <td>30%</td>
+        </tr>
+        <tr>
+            <td>Safari</td> <!-- первый столбец -->
+            <td>413</td>
+            <td>3:43</td>
+            <td>10%</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>Сравнение моделей</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Модель</th>
+            <th>ОС</th>
+            <th>Дислей</th>
+            <th>ОЗУ</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Samsung Galaxy S7</td>
+        <td rowspan="2">Android</td>
+        <td>5.1"</td>
+        <td>4 ГБ</td>
+    </tr>
+    <tr>
+        <td>SONY Xperia Z5</td>
+        <td>4.6"</td>
+        <td rowspan="2">2 ГБ</td>
+    </tr>
+    <tr>
+        <td> iPhone 6S</td>
+        <td>iOS</td>
+        <td>4.7"</td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
