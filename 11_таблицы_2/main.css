@@ -1,0 +1,29 @@
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin: 10% auto;
+}
+
+tr {
+    border-bottom: 1px solid black;
+}
+
+td {
+    width: 100px;
+    height: 50px;
+    transition: all 0.8s ease-in-out;
+}
+
+tr:nth-child(even) {  /* для каждой четной строчки таблицы */
+    background: #e5e5e5;
+}
+
+tr:nth-child(odd) {  /* для каждой нечетной строчки таблицы */
+    background: #efefef;
+}
+
+td:hover {  /* если навестись курсором на ячейку */
+    background: #ffe9e9;
+    border: 4px solid red;
+}
+
