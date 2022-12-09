@@ -1,0 +1,67 @@
+div {
+    padding: 20px;
+    color: white;
+    margin: 5px;
+}
+
+.first {
+    width: 2%;
+    background: green;
+    height: 15px;
+}
+
+.second {
+    width: 5%;
+    background: yellow;
+    height: 9px;
+}
+
+.third {
+    width: 5%;
+    background: red;
+    height: 25px;
+}
+
+.forth {
+    width: 8%;
+    background: blue;
+    height: 25px;
+}
+
+.container {  /* Это будем превращать в flex-container */
+    display: flex;  /* включает отображение flex */
+    flex-direction: row;
+    /* модель отображения флекс-элементов.
+    row - в строку;
+    column - в столбик;
+    row-reverse - в строку !!!в обратном порядке!!!
+    column-reverse - в столбик !!!в обратном порядке!!!
+    */
+    justify-content: space-around; /* расположение элементов по главной оси */
+    /*
+    flex-end - поставить элементы в конец главной оси;
+    flex-start - поставить элементы в начале главной оси;
+    center - расположить по центру главной оси;
+    space-around - расположить элементы на одинаковом
+    расстоянии друг от друга и от границ экрана вне зависимости
+    от их ширины;
+    space-between - расположить элементы на одинаковом
+    расстоянии друг от друга, но не от границ экрана вне зависимости
+    от их ширины;
+    */
+    align-items: center;  /* расположение элементов по побочной оси */
+    /*
+    flex-end - поставить элементы в конец поперечной оси;
+    flex-start - поставить элементы в начале поперечной оси;
+    center - расположить по центру поперечной оси;
+
+    Следующие свойства не работают при прописанном свойстве height
+    stretch - растянуть на всю высоту flex-контейнера;
+    baseline - выравнять по нижней границе;
+    */
+    background: #dcdcdc;
+    padding: 1%;
+    height: 30vh;
+}
+
+
