@@ -1,0 +1,27 @@
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th, td {
+    width: 33%;
+    padding: 25px;
+    border-bottom: 2px solid lightgray;
+}
+
+tr:nth-child(even) {
+    background: lightyellow;
+}
+
+.darkcyan {
+    background: darkcyan;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    color: white;
+}
+
+th:hover, td:hover {
+    background: lightblue;
+}
+
