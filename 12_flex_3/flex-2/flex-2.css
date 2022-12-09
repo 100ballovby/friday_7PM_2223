@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    height: 40vh;
+    background: #fafafa;
+}
+
+div {
+    width: 120px;
+    height: 120px;
+    color: white;
+    margin: 1%;
+}
+
+.first {
+    background: #8aff8a;
+}
+.second {
+    background: #ffe74c;
+}
+.third {
+    background: #ff6363;
+}
+.fourth {
+    background: #84c8ff;
+}
+.fifth {
+    background: #6ee3c1;
+}
+.sixth {
+    background: #efb140;
+}
