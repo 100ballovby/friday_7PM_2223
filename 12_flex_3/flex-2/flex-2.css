@@ -1,7 +1,10 @@
 .container {
+    width: 20%;
     display: flex;
     height: 40vh;
     background: #fafafa;
+    flex-wrap: wrap;  /* когда элементы не помещаются в контейнер,
+     они будут переноситься на другие строки */
 }
 
 div {
@@ -9,6 +12,10 @@ div {
     height: 120px;
     color: white;
     margin: 1%;
+
+    /* flex-basis: 160px;  влияет на размер элементов
+    вдоль главной оси. */
+    flex-grow: 2;  /* увелмчивает ширину элемента относительно единиц, которые ей указаны */
 }
 
 .first {
@@ -19,6 +26,7 @@ div {
 }
 .third {
     background: #ff6363;
+    flex-grow: 10;
 }
 .fourth {
     background: #84c8ff;
