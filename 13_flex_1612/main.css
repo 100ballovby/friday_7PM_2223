@@ -21,6 +21,7 @@ a:hover {
     background: #fafafa;
     padding: 0.3em 0.6em;  /* 0.3 сверху и снизу, 0.6 слева и справа */
     border: 0.01em solid grey;
+    border-radius: 0.5em;
 }
 
 .main-header {
