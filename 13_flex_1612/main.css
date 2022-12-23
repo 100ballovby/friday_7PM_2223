@@ -22,6 +22,7 @@ a:hover {
     padding: 0.3em 0.6em;  /* 0.3 сверху и снизу, 0.6 слева и справа */
     border: 0.01em solid grey;
     border-radius: 0.5em;
+    transition: all 0.5s ease-in-out;
 }
 
 .btn:hover {
@@ -36,6 +37,16 @@ a:hover {
 
 .btn-outline-success:hover {
     background: #1d811d;
+    color: #fff;
+}
+
+.btn-outline-info {
+    border-color: #7efff0;
+    color: #7efff0;
+}
+
+.btn-outline-info:hover {
+    background: #7efff0;
     color: #fff;
 }
 
@@ -55,6 +66,20 @@ a:hover {
 .main-menu > li {
     display: block;
     margin-right: 1.6rem;
+}
+
+.nav-link {
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    color: #9f9f9f;
+}
+
+.big {
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 .main-heading {
@@ -77,6 +102,8 @@ a:hover {
     border: 0.02em solid gray;
     border-radius: 0.7em;
 }
+
+
 
 
 
