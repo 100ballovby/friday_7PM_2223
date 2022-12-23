@@ -15,6 +15,14 @@ a:hover {
     text-decoration: underline;
 }
 
+.btn {
+    display: block;
+    text-decoration: none;
+    background: #fafafa;
+    padding: 0.3em 0.6em;  /* 0.3 сверху и снизу, 0.6 слева и справа */
+    border: 0.01em solid grey;
+}
+
 .main-header {
     padding: 1.5rem;  /* 0.5 от паддинга, встроенного в браузера */
     background: #eaeaea;
