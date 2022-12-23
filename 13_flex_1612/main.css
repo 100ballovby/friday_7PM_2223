@@ -24,6 +24,15 @@ a:hover {
     border-radius: 0.5em;
 }
 
+.btn:hover {
+    text-decoration: none;
+    cursor: pointer;  /* превращает курсор из стрелки в палец  */
+}
+
+.btn-outline-success {
+
+}
+
 .main-header {
     padding: 1.5rem;  /* 0.5 от паддинга, встроенного в браузера */
     background: #eaeaea;
