@@ -97,14 +97,41 @@ a:hover {
 
 .card {
     width: 25%;
-    padding: 3rem;
     margin: 1rem 0;
     border: 0.02em solid gray;
     border-radius: 0.7em;
 }
 
+.card-header {
+    background: #fafafa;
+    padding: 1.5em;
+}
 
+.card-body {
+    padding: 0.5em;
+}
 
+.card-footer {
+    background: #fafafa;
+    padding: 1.5em;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.3em;
+    background: gray;
+    border-radius: 0.5em;
+}
+
+.bg-red {
+    background: red;
+    color: white;
+}
+
+.bg-info {
+    background: #7efff0;
+    color: white;
+}
 
 
 
