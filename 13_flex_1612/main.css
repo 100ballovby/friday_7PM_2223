@@ -30,7 +30,13 @@ a:hover {
 }
 
 .btn-outline-success {
+    border-color: #1d811d;
+    color: #1d811d;
+}
 
+.btn-outline-success:hover {
+    background: #1d811d;
+    color: #fff;
 }
 
 .main-header {
