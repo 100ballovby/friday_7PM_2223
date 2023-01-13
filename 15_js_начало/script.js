@@ -11,7 +11,7 @@ let spisok = document.querySelector('.list');  // найти на страниц
 for (let i = 0; i < array.length; i++) {  // повторить <длина_массива> раз
     let li = document.createElement('li');  // создать элемент li
     li.innerHTML = array[i];  // записать элемент массива в li
-    spisok.appendChild(li);  // li добавить в список
+    spisok.appendChild(li);  // li добавить в списокq
 }
 
 let body = document.querySelector('body');  // находим элемент body
