@@ -1,0 +1,17 @@
+.colored {
+    background: #41ab24;
+    color: #fff;
+    font-weight: bold;
+}
+
+.even {
+    background: #d35e8e;
+}
+
+div {
+    width: 30%;
+    padding: 1em;
+    margin-bottom: 0.5em;
+}
+
+
