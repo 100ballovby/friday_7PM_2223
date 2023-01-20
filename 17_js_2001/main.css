@@ -1,0 +1,13 @@
+.matrix {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.matrix td {
+    border: 0.3em solid black;
+    padding: 0.5em;
+    text-align: center;
+}
+
+
+

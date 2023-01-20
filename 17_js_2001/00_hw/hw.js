@@ -9,3 +9,24 @@ let images = [
     "https://images.unsplash.com/photo-1670707669249-14105631c597?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80",
     "https://images.unsplash.com/photo-1670787196366-11b4a82501e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2478&q=80",
 ]
+
+
+let gallery = document.querySelector('.images-gallery');  // нахожу на странице место, куда буду генерировать картинки
+for (let i = 0; i < images.length; i++) {
+    let li = document.createElement('li');
+    let img = document.createElement('img');
+    let div = document.createElement('div');
+    let span = document.createElement('span');
+
+    div.classList.add('overlay');  // добавляю для дива класс overlay
+    span.innerHTML = "Image " + i + " title";
+
+    img.src = images[i];  // в атрибут src для картинки мы вставляем ссылку с индексом i
+
+    li.appendChild(img);  // добавляю картинку в li
+    div.appendChild(span);
+    li.appendChild(div);
+    gallery.appendChild(li);
+}
+
+
