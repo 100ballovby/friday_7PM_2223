@@ -13,15 +13,17 @@
 
 <!-- атрибут onclick позволяет привязать к элементу действие,
  которое будет совершаться, когда по этому элемент кликнут мышкой -->
-<p onclick="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto asperiores beatae commodi dolore dolores
+<p id="1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto asperiores beatae commodi dolore dolores
     enim eos ex fugit illum molestiae nemo neque, nulla pariatur quo repellendus sit, tempora voluptatibus?</p>
-<p>Dolores ducimus ea et facilis ipsa porro, quaerat recusandae reprehenderit repudiandae sit, tempore ut velit.
+<button onclick="change_font(1)">Поменять шрифт</button>
+<p id="2">Dolores ducimus ea et facilis ipsa porro, quaerat recusandae reprehenderit repudiandae sit, tempore ut velit.
     Aspernatur at, beatae commodi consectetur cumque dignissimos, earum fugiat itaque modi nemo, tempore vel velit?</p>
-<p>Ab asperiores, corporis cum distinctio doloribus ea eius error facere harum iusto mollitia natus nihil nobis
+<button onclick="change_font(2)">Поменять шрифт</button>
+<p id="3">Ab asperiores, corporis cum distinctio doloribus ea eius error facere harum iusto mollitia natus nihil nobis
     perferendis quisquam sapiente similique sunt ut velit voluptas. Assumenda doloremque ex facilis possimus sequi!</p>
+<button onclick="change_font(3)">Поменять шрифт</button>
 
 <button onclick="change_background('#a6ffef')">Поменять цвет фона</button>
-<button onclick="change_background('#fff')">Вернуть белый</button>
 <!-- если на кнопку нажмут, нужно вызвать функцию change_background() -->
 <script src="script.js"></script>
 </body>
