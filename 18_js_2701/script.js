@@ -6,7 +6,7 @@ for (let i = 0; i < 10; i++) {
 }  // наполнение массива числами
 
 
-let sum = 0;
+let sum;
 
 for (let i = 0; i < array.length; i++) {
 	sum += array[i];
