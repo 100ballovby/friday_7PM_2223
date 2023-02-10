@@ -1,0 +1,47 @@
+* {
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.8;
+}
+
+.main-header {
+    display: flex;
+    background: #fffbee;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: #424242;
+    font-size: 1.2rem;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.mode img {
+    width: 25%;
+}
+
+.night {
+    background: black;
+    color: white;
+}
