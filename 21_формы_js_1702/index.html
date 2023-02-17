@@ -22,7 +22,24 @@
     <input type="button" value="Щелкни на кнопцу!"
            name="btn1" onclick="btnPress();">
     <hr>
-    div.checkbox
+    <div class="checkbox">
+        <label for="ch">Флажок: <input type="checkbox" name="ch" id="ch"></label>
+        <input type="button" value="Смена состояния"
+               onclick="document.Test.ch.click();">
+    </div>
+    <div class="select">
+        <select id="" name="list1" size="5">
+            <option value="tea" selected>Чай</option>
+            <option value="coffee">Кофе</option>
+            <option value="milk">Молоко</option>
+            <option value="cocoa">Какао</option>
+            <option value="juice">Сок</option>
+        </select>
+        <input type="button" value="Хочу кофе"
+        onclick="document.Test.list1.options[1].selected='True'">
+        <!-- обращения к option происходит через метод option и индекс элемента -->
+        <input type="button" value="Инфо" onclick="info();">
+    </div>
 </form>
 
 <script src="script.js"></script>
