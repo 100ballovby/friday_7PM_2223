@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<div class="ex1"></div>
+<!-- У формы есть два набора свойств. Один статический, а второй зависит
+ от того, что определено в форме.
+ Первый набор:
+ action (куда отправлять форму)
+ encoding (кодировка данных формы)
+ method (метод отправки)
+ target (место назначения данных)
+ elements - массив всех элементов (полей) формы
+ length - длина массива elements
+ -->
+<form action="" class="form" name="Test">
+    <input type="button" value="Щелкни на кнопцу!"
+           name="btn1" onclick="btnPress();">
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
