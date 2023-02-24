@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<h1>Шифр Цезаря</h1>
+
+<form method="POST">
+    <label for="phrase">Фраза:
+        <input type="text" id="phrase" placeholder="Мама мыла раму">
+    </label>
+    <label for="shift"><input type="number"  min="1" max="33" id="shift"></label>
+    <input type="submit" value="Зашифровать!">
+</form>
+
+<blockquote class="result">
+    <p class="text"></p>
+</blockquote>
+
+<script src="script.js"></script>
+</body>
+</html>
