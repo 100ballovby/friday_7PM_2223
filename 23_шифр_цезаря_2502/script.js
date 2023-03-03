@@ -1,7 +1,11 @@
 let ru = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
 let eng = "abcdefghijklmnopqrstuvwxyz";
 
-function caesar_cipher(phrase, shift) {
+function caesar_cipher() {
+    // значения достанем из полей формы
+    let phrase = document.forms['c_form']['phrase'].value;
+    let shift = document.forms['c_form']['shift'].value;
+
     let res = "";
     for (let i = 0; i < phrase.length; i++) {
         let place = ru.indexOf(phrase[i]);  // определяем место буквы в алфавит

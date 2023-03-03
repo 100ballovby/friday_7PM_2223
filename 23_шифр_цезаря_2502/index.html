@@ -9,18 +9,20 @@
 
 <h1>Шифр Цезаря</h1>
 
-<form action="" method="POST">
+<form action="" name="c_form" onsubmit="return false">
     <div>
         <label for="phrase">Фраза:
-            <input type="text" id="phrase">
+            <input type="text" id="phrase" name="phrase">
         </label>
     </div>
     <div>
         <label for="shift">Сдвиг:
-            <input type="number" id="shift" min="1" max="33">
+            <input type="number" id="shift" name="shift" min="1" max="33">
         </label>
     </div>
-    div>input
+    <div>
+        <input type="submit" value="Зашифровать" onclick="caesar_cipher(); return false;">
+    </div>
 </form>
 
 <p id="res"></p>
