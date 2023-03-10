@@ -9,7 +9,7 @@
 
 <h1>Шифр Цезаря</h1>
 
-<form action="" name="c_form" onsubmit="return false">
+<form action="" name="c_form" id="c_form">
     <div>
         <label for="phrase">Фраза:
             <input type="text" id="phrase" name="phrase">
@@ -21,7 +21,7 @@
         </label>
     </div>
     <div>
-        <input type="submit" value="Зашифровать" onclick="caesar_cipher(); return false;">
+        <button onclick="caesar_cipher()">Зашифровать</button>
     </div>
 </form>
 

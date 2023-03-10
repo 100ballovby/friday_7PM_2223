@@ -3,8 +3,10 @@ let eng = "abcdefghijklmnopqrstuvwxyz";
 
 function caesar_cipher() {
     // значения достанем из полей формы
-    let phrase = document.forms['c_form']['phrase'].value;
-    let shift = document.forms['c_form']['shift'].value;
+    let form = document.getElementById('');
+    let formData = new FormData(form);
+    let phrase = formData.get('phrase');
+    let shift = formData.get('shift');
 
     let res = "";
     for (let i = 0; i < phrase.length; i++) {
