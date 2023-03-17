@@ -6,7 +6,13 @@
 </head>
 <body>
 
-<form action="" id="mars-one">
+<style>
+    .hidden {
+        display: none;
+    }
+</style>
+
+<form action="/apply/" id="mars-one">
     <label for="name">
         Your name:
         <input type="text" id="name" name="name">
@@ -36,6 +42,7 @@
         <input type="file" accept="image/jpeg" id="image" name="image">
     </label>
     <button type="submit">Send</button>
+    <div class="hidden" id="loader">Sending...</div>
 </form>
 
 <script src="script.js"></script>
