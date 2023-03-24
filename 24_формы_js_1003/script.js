@@ -15,7 +15,18 @@ function serialize(form) {
 async function form_submit(event) {
     event.preventDefault();
     const data = serialize(event.target);  // сохраним массив с данными из формы
-    const response = await sendData(data);
+
+    toggleLoader();
+
+    const { status, error } = await sendData(data);
+
+    toggleLoader();
+
+    if (status === 200) {
+        onSuccess(event.target);
+    } else {
+        onError(error);
+    }
 }
 
 async function sendData(data) {
@@ -26,6 +37,22 @@ async function sendData(data) {
     })
 }  // функция отправки данных на "сервер"
 
+
+function toggleLoader() {
+    const loader = document.getElementById('loader');
+    loader.classList.toggle('hidden');
+}
+
+
+function onSuccess(form) {
+    alert('Submitted Successfully');
+    form.classList.toggle('hidden');
+}
+
+
+function onError(error) {
+    alert(error.message);
+}
 
 const form = document.getElementById('mars-one');
 form.addEventListener('submit', form_submit);

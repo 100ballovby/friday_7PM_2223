@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 3.5em;
+    display: flex;
+    align-items: center;
+    background-color: #18191c;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+}
+
+.input-title {
+    max-width: 205px;
+    margin-right: 2.5em;
+    font-size: 1.7em;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.input, .button, .select, .checkbox-wrapper, .file-selector {
+    max-width: 350px;
+}
+
+.input {
+    border: 0.2em solid #fff;
+    border-radius: 0.2em;
+    padding: 0.8em 0.9em;
+    background: transparent;
+    color: #fff;
+    font-weight: 300;
+    appearance: none;
+}
+
+.input:focus {
+    border-color: #ffd829;
+    outline: none;
+}
