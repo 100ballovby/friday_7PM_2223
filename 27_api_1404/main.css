@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table {
+    width: 80%;
+    margin: 2em auto;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 18px;
+}
+
+td {
+    border-bottom: 0.2em solid black;
+    padding: 0.4em;
+}
+
+tr:nth-child(even) {
+    background: #e6e6e6;
+}
+
+
