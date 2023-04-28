@@ -3,34 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <title>Horoscope.me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-
-<form action="" class="horo">
-    <div class="form-wrapper">
-        <label for="sign">Select sign</label>
-        <select name="sign" id="sign">
-            <option value="aries">Aries</option>
-            <option value="taurus">Taurus</option>
-            <option value="gemini">Gemini</option>
-            <option value="cancer">Cancer</option>
-            <option value="leo">Leo</option>
-            <option value="virgo">Virgo</option>
-            <option value="libra">Libra</option>
-            <option value="scorpio">Scorpio</option>
-            <option value="sagittarius">Sagittarius</option>
-            <option value="capricorn">Capricorn</option>
-            <option value="aquarius">Aquarius</option>
-            <option value="pisces">Pisces</option>
-        </select>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="/">Horoscope</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="form-wrapper">
-        <button type="submit">Get horoscope</button>
-    </div>
-</form>
+</nav>
 
-<div id="result"></div>
+<main class="container">
+
+    <h1 class="my-3 text-center">Horoscope prediction <span class="badge bg-primary">Beta</span></h1>
+
+    <div class="card mx-auto">
+        <div class="card-header text-center">Horoscope</div>
+        <form action="" class="horo m-3">
+        <div class="my-2">
+            <label for="sign" class="form-label">Select sign</label>
+            <select name="sign" id="sign" class="form-select form-select-lg">
+                <option value="aries">Aries</option>
+                <option value="taurus">Taurus</option>
+                <option value="gemini">Gemini</option>
+                <option value="cancer">Cancer</option>
+                <option value="leo">Leo</option>
+                <option value="virgo">Virgo</option>
+                <option value="libra">Libra</option>
+                <option value="scorpio">Scorpio</option>
+                <option value="sagittarius">Sagittarius</option>
+                <option value="capricorn">Capricorn</option>
+                <option value="aquarius">Aquarius</option>
+                <option value="pisces">Pisces</option>
+            </select>
+        </div>
+        <div class="my-2">
+            <button type="submit" class="btn btn-primary btn-lg">Get horoscope</button>
+        </div>
+    </form>
+    </div>
+
+    <hr>
+
+    <div id="result" class="card mx-auto">
+        <div class="card-header text-center" id="horo-header">
+            <h3>Your horoscope will be there</h3>
+        </div>
+        <div class="card-body" id="horo-text"></div>
+    </div>
+
+</main>
 
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>

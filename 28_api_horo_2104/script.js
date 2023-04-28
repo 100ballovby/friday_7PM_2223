@@ -3,7 +3,7 @@ function getHoroscope() {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'KEY',
+            'X-RapidAPI-Key': '4b3d784309msh1a54be2ab333712p1f580cjsn967b22d81802',
             'X-RapidAPI-Host': 'horoscopes-ai.p.rapidapi.com'
         }
     };
@@ -13,8 +13,10 @@ function getHoroscope() {
         .then(data => {
             const horoscope = data.general;
 
-            const result = document.querySelector('#result');
-            result.innerHTML = `<h1>Horoscope for ${sign}</h1><p>${horoscope}</p>`;
+            const header = document.querySelector('#horo-header');
+            header.innerHTML = `<h1>Horoscope for ${sign}</h1>`;
+            const text = document.querySelector('#horo-text');
+            text.innerHTML = `<p>${horoscope}</p>`;
 
         })
 
