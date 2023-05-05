@@ -1,0 +1,22 @@
+.jumbotron {
+    color: #fff;
+    height: 100vh;  /* 100% от высоты экрана */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.muted {
+    color: #dedede;
+    font-size: 1.5em;
+}
+
+.jumbotron .btn {
+    width: 30%;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
